@@ -58,37 +58,17 @@ const cabecera = `
 
 				<div class="footer-icons">
 
-					<a href="www.facebook.com"><i><img src="https://img.icons8.com/small/32/000000/facebook-new.png"/></i></a>
-					<a href="www.twitter.com"><i><img src="https://img.icons8.com/small/32/000000/twitter.png"/></i></a>
-					<a href="www.instagram.com"><i><img src="https://img.icons8.com/small/32/000000/instagram-new.png"/></i></a>
-					<a href="www.youtube.com"><i><img src="https://img.icons8.com/small/32/000000/youtube-play.png"/></i></a>
+					<a href="https://www.facebook.com"><i><img src="https://img.icons8.com/small/32/000000/facebook-new.png"/></i></a>
+					<a href="https://www.twitter.com"><i><img src="https://img.icons8.com/small/32/000000/twitter.png"/></i></a>
+					<a href="https://www.instagram.com"><i><img src="https://img.icons8.com/small/32/000000/instagram-new.png"/></i></a>
+					<a href="https://www.youtube.com/"><i><img src="https://img.icons8.com/small/32/000000/youtube-play.png"/></i></a>
 
 				</div>
 
 			</div>
-
-      
-
-      
-
-      
 
 		</footer>
         `
 
   document.getElementById('footer').innerHTML = footer;
 
-
-//   <div class="footer-right">
-
-//   <p>Contacto Express</p>
-
-//   <form action="#" method="post">
-
-//     <input type="text" name="email" placeholder="Email">
-//     <textarea name="message" placeholder="Mensaje"></textarea>
-//     <button>Enviar</button>
-
-//   </form>
-
-// </div>

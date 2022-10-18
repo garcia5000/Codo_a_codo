@@ -38,10 +38,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-
 .logo {
 	width: 50px;
-	padding-top: 8px;
+	padding-top: 0px;
 }
 
 .item2 {
@@ -140,13 +139,62 @@ a, a:visited {
 	background-color: rgba(209, 209, 209, 0.324);
 	padding: 5px;
 	gap: 5px;
+	
 }
+
+.animated:hover {
+	transform: scale(1.05);
+}
+
+/* @-webkit-keyframes zoomIn {
+	from {
+	  opacity: 0;
+	  -webkit-transform: scale3d(0.3, 0.3, 0.3);
+	  transform: scale3d(0.3, 0.3, 0.3);
+	}
+  
+	50% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes zoomIn {
+	from {
+	  opacity: 0;
+	  -webkit-transform: scale3d(0.3, 0.3, 0.3);
+	  transform: scale3d(0.3, 0.3, 0.3);
+	}
+  
+	50% {
+	  opacity: 1;
+	}
+  }
+  
+  .zoomIn:hover {
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+  }
+  
+  .animated:hover {
+	-webkit-animation-duration: 250s;
+	animation-duration: 500ms;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+  } */
 
 
 .radar {
 	width: 100%;
 	height: 800px;
 	padding-top: 4%;
+}
+
+.contacto{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 800px;
+	padding-top: 4%;
+	
 }
 
 .top-nav {
@@ -163,7 +211,7 @@ a, a:visited {
 	text-decoration: none !important;
 	position: fixed;
 	width: 100%;
-		
+	z-index: 1
 }
 
   
@@ -280,9 +328,6 @@ a, a:visited {
 	
   }
   
-  /* li a:hover, .dropdown:hover .dropbtn {
-	background-color: red;
-  } */
   
   li.dropdown {
 	display: inline-block;
@@ -354,15 +399,10 @@ a, a:visited {
 
 
 
-
-/* Footer left */
-
 .footer-distributed .footer-left{
 	float: center;
 }
 
-
-/* Footer links */
 
 .footer-distributed .footer-links{
 	color:  #ffffff;
@@ -417,62 +457,7 @@ a, a:visited {
 }
 
 
-/* .footer-distributed form{
-	display: inline-block;
-}
 
-.footer-distributed form input,
-.footer-distributed form textarea{
-	display: block;
-	border-radius: 3px;
-	box-sizing: border-box;
-	background-color:  #1f2022;
-	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-	border: none;
-	resize: none;
-
-	font: inherit;
-	font-size: 14px;
-	font-weight: normal;
-	color:  #d1d2d2;
-
-	width: 400px;
-	padding: 18px;
-}
-
-.footer-distributed ::-webkit-input-placeholder {
-	color:  #5c666b;
-}
-
-.footer-distributed ::-moz-placeholder {
-	color:  #5c666b;
-	opacity: 1;
-}
-
-.footer-distributed :-ms-input-placeholder{
-	color:  #5c666b;
-}
-
-
-.footer-distributed form input{
-	height: 55px;
-	margin-bottom: 15px;
-}
-
-.footer-distributed form textarea{
-	height: 100px;
-	margin-bottom: 20px;
-}
-
-.footer-distributed form button{
-	border-radius: 3px;
-	background-color:  #33383b;
-	color: #ffffff;
-	border: 0;
-	padding: 15px 50px;
-	font-weight: bold;
-	float: right;
-} */
 
 @media (max-width: 1000px) {
 
@@ -527,7 +512,7 @@ a, a:visited {
 
 .container-md {
 	
-    padding: 5%;
+    padding-top: 5%;
 }
 
 #output {
@@ -535,6 +520,161 @@ a, a:visited {
     display: grid!important;
     grid-template-columns: auto auto auto auto;
     align-content: center;
+}
+
+/* para el form de contacto */
+form{
+   margin-top: 60px;
+   height: 50px;
+   align-content: center;
+   width: 700px;
+   padding-left: 200px;
+}
+
+
+
+input[type=text], select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+ input[type=email], select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+ 
+ input[type=submit] {
+   width: 100%;
+   background-color: #172F43;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+
+ .formulario__grupo-input textarea {
+   width: 100%;
+   height: 150px;
+   padding: 12px 20px;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   background-color: #f8f8f8;
+   resize: none;
+ }
+
+ /*---------------Estilos para validar ----------------*/
+
+ .formulario__label {
+   display: block;
+   font-weight: 700;
+   padding: 10px;
+   cursor: pointer;
+}
+ .formulario__validacion-estado {
+   position: absolute;
+   right: 10px;
+   bottom: 15px;
+   z-index: 100;
+   font-size: 16px;
+   opacity: 0;
+}
+ .formulario_incorrecto .nombre {
+   color: red;
+ }
+
+ .formulario__grupo-input {
+   position: relative;
+}
+
+ .formulario__input {
+   width: 100%;
+   background: #fff;
+   border: 3px solid transparent;
+   border-radius: 3px;
+   height: 45px;
+   line-height: 45px;
+   padding: 0 40px 0 10px;
+   transition: .3s ease all;
+}
+
+.formulario__input:focus {
+   border: 3px solid #172F43;
+   outline: none;
+   box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+ .formulario__input-error {
+   font-size: 12px;
+   margin-bottom: 0;
+   display: none; 
+}
+
+.formulario__input-error-activo {
+   display: block;
+}
+
+.formulario__validacion-estado {
+   position: absolute;
+   right: 10px;
+   bottom: 15px;
+   z-index: 100;
+   font-size: 16px;
+   opacity: 0;
+}
+
+.formulario__mensaje {
+   height: 45px;
+   line-height: 45px;
+   background: #F66060;
+   padding: 0 15px;
+   border-radius: 3px;
+   display: none;
+}
+
+.formulario__mensaje-exito {
+   font-size: 14px;
+   color: #119200;
+   display: none;
+   
+}
+
+.formulario__mensaje-exito-activo {
+   display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+   color: #1ed12d;
+   opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+   color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+   color: #bb2929;
+   opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+   border: 3px solid #bb2929;
 }
 
 

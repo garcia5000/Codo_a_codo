@@ -1,11 +1,13 @@
 document.getElementById("myBtn").addEventListener("click", getdata);
 
 function getdata() {
+
   fetch("https://randomuser.me/api/?results=20")
+
     .then((res) => res.json())
 
     .then((data) => {
-      let user = data.results; //porque así junto los campos para llegar al número que jode
+      let user = data.results;
 
       let output = "";
 
@@ -23,7 +25,7 @@ function getdata() {
                             <li class="list-group-item"><p>Email: <br>${lists.email}</p></li>
                             <li class="list-group-item"><p>Tel.: <br>${lists.cell}</p></li>
                             <li class="list-group-item"><p>Usuario: <br>${lists.login.username}</p></li>
-                            <li class="list-group-item"><p>Contraseña: <br>${lists.login.password}</p></li>
+                            <li class="list-group-item"><p>Contarseña: <br>${lists.login.password}</p></li>
                           </ul>    
                         </div>
                     </div>
