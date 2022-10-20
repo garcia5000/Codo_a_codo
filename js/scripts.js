@@ -10,9 +10,9 @@ const cabecera = `
       <div class='menu-button'></div>
     </label>
     <ul class="menu">
-      <li><a href="index.html" target="_blank">Inicio</a></li>
-      <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
-      <li><a href="contacto.html" target="_blank">Contacto</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
       <li><a href="Threat.html" target="_blank">Mapa de amenazas</a></li>
 
       <li class='dropdown'>
@@ -41,15 +41,13 @@ const cabecera = `
 
 			<div class="footer-left">
 
-            
-
                   <p class="footer-links">
                 
-                <a href="index.html" target="_blank">Inicio</a>
+                <a href="index.html">Inicio</a>
 					·
-					<a href="nosotros.html" target="_blank">Nosotros</a>
+					<a href="nosotros.html">Nosotros</a>
 					·
-					<a href="contacto.html" target="_blank">Contacto</a>
+					<a href="contacto.html">Contacto</a>
 					·
 					<a href="Threat.html" target="_blank">Mapa de amenazas</a>
 				</p>

@@ -486,7 +486,6 @@ a, a:visited {
     align-content: center;
 }
 
-/* para el form de contacto */
 form{
    margin-top: 60px;
    height: 50px;
@@ -510,8 +509,6 @@ form{
 
 	}
 } */
-
-
 
 input[type=text], select {
    width: 100%;
@@ -558,8 +555,6 @@ input[type=text], select {
    background-color: #f8f8f8;
    resize: none;
  }
-
- /*---------------Estilos para validar ----------------*/
 
  .formulario__label {
    display: block;
@@ -638,7 +633,6 @@ input[type=text], select {
    display: block;
 }
 
-/* ----- -----  Estilos para Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
    color: #1ed12d;
    opacity: 1;
@@ -656,13 +650,3 @@ input[type=text], select {
 .formulario__grupo-incorrecto .formulario__input {
    border: 3px solid #bb2929;
 }
-
-
-
-
-
-
-
-
-
-
